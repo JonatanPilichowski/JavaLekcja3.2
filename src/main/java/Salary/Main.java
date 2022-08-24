@@ -11,11 +11,11 @@ public class Main {
     public static void main(String[] args) {
         Company company = new Company();
 
-        for (int i=0;i<5; i++){
+        for (int i = 0; i < 5; i++) {
             company.employees.add(newEmployee());
         }
 
-        while(true) {
+        while (true) {
             System.out.println("Select menu value: \n 1- Sum of existing \n 2- get all the data \n 3- add new employee \n 4- exit");
             Scanner scanner = new Scanner(System.in);
             int menu = scanner.nextInt();
@@ -43,9 +43,8 @@ public class Main {
             }
         }
 
-        }
-
-
-
     }
+
+
+}
 
