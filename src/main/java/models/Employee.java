@@ -1,19 +1,23 @@
-package Salary;
+package models;
 
 public class Employee {
     String firstName;
     String lastName;
-    double salary;
+    int salary;
 
-    public Employee(String firstName, String lastName, double salary) {
+    public Employee(String firstName, String lastName, int salary) {
         this.firstName = firstName;
         this.lastName = lastName;
         this.salary = salary;
     }
 
-
     public void getAllData() {
-        System.out.println("Salary for " + firstName + " " + lastName + " is " + salary);
+        System.out.println("Salary for " + firstName + " " + lastName + " is " + salary + ".");
+    }
+
+    @Override
+    public String toString() {
+        return "Salary for " + firstName + " " + lastName + " is " + salary + ".";
     }
 
     public String getFirstName() {
@@ -24,9 +28,7 @@ public class Employee {
         return lastName;
     }
 
-
-    public double getSalary() {
+    public int getSalary() {
         return salary;
     }
-
 }
