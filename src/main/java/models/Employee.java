@@ -11,10 +11,6 @@ public class Employee {
         this.salary = salary;
     }
 
-    public void getAllData() {
-        System.out.println("Salary for " + firstName + " " + lastName + " is " + salary + ".");
-    }
-
     @Override
     public String toString() {
         return "Salary for " + firstName + " " + lastName + " is " + salary + ".";
